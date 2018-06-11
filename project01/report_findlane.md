@@ -6,7 +6,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ../examples/grayscale.jpg "Grayscale"
+[image1]: ./examples/grayscale.jpg "Grayscale"
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
@@ -16,8 +16,8 @@ Firstly, the specific color is masked on video frame, in this cases it's about w
 
 [//]: # (Image References)
 
-[image1]: ../result/HLS.jpg "HLS"
-[image2]: ../result/HSV.jpg "HSV"
+[image1]: ./result/HLS.jpg "HLS"
+[image2]: ./result/HSV.jpg "HSV"
 
 Secondly, the image is transformed into gray scale. This is a standard procedure to reduce the processing pixel dimension from 3D BRG to 2D gray. Instead of repesenting the pixel of 24 bits where 8 bits for each basical color from 0 to 255, 8 bits is used to represent the gray scale from 0 to 255. 
 
