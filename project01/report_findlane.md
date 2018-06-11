@@ -59,6 +59,8 @@ Combining the lane image and orignial image, the image becomes:
 ![alt text](https://github.com/wincle626/Udacity_Project_Results/blob/master/project01/result/Combine.jpg)
 
 Ninethly, show the video frame or save to file. 
+The final video is like this:
+![alt text](https://github.com/wincle626/Udacity_Project_Results/blob/master/project01/result/output.gif)
 
 ### 2. Identify potential shortcomings with your current pipeline
 
