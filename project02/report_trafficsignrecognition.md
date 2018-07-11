@@ -19,6 +19,9 @@ The goals / steps of this project are the following:
 [image2]: ./results/input_data_preprocessing.png "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./results/load_data_preprocessing.png "Five Traffic Signs"
+[image5]: ./results/load_data_softmax.png "Five Traffic Signs Classifier"
+[image6]: ./results/load_data_featuremap1.png "Featuremap1"
+[image7]: ./results/load_data_featuremap2.png "Featuremap2"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -136,6 +139,7 @@ Here are the results of the prediction:
 | 100 km/h	      		| Bumpy Road					 				|
 | Slippery Road			| Slippery Road      							|
 
+![alt text][image5] 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
 
@@ -159,4 +163,6 @@ For the second image ...
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
+![alt text][image6] 
+![alt text][image7] 
 
