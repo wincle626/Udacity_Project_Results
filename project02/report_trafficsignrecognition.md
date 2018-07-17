@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./results/input_data_statistic.png "Visualization"
 [image2]: ./results/input_data_preprocessing.png "Grayscaling"
-[image3]: ./examples/training_valid_accuracy.png "Training Accuracy"
+[image3]: ./results/training_valid_accuracy.png "Training Accuracy"
 [image4]: ./results/load_data_preprocessing.png "Five Traffic Signs"
 [image5]: ./results/load_data_softmax.png "Five Traffic Signs Classifier"
 [image6]: ./results/load_data_featuremap1.png "Featuremap1"
