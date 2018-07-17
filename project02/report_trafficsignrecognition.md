@@ -101,7 +101,7 @@ To train the model, I used learning rate of 0.001, upto 200 epochs and bach size
 
 The final model results are show as following:
 
-![alt text][image2]
+![alt text][image3]
 
 * training set accuracy is over 95%
 * validation set accuracy of 85.0% 
