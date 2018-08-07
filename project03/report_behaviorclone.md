@@ -3,10 +3,10 @@
 [//]: # (Image References)
 
 [image1]: ./data_dist.png "dataprep"
-[image2]: ./train_dist.png "traindist"
-[image3]: ./data_prep.png "imageproc"
+[image2]: ./data_prep.png "imageproc"
 
 ### Project Files
+
 |  Filename   |   Description  | 
 |:-------------:|:-------------:|
 | data_prep.py |  data preprocessing and argumentation |
@@ -16,18 +16,20 @@
 | video.mp4 | track 1 video record |
 
 ### Usage
-Download simulator from [thie repository](https://github.com/udacity/self-driving-car-sim), run the simulator in 
+
+Download simulator from [udacity repository](https://github.com/udacity/self-driving-car-sim), run the simulator in 
 autonomous mode and execute following command:
 ```
 > python drive.py model.h5 run1
 ```
 
 ### Data Preprocessing & Argumentation
-I used the trained data from the simulator. Using the simulator, the car is driving mannually for several rounds. 
+I used the trained data from the simulator. Using the simulator, the car is driving mannually for several rounds. Data is recorded as image and the corresponding steering, left/right turn, throttle, brake and speed are all saved in a .scv file. The distribution of data class labels are shown as:
 
 ![alt text][image1] 
+
+The data is preprocessed with noise and flipping due to the most left turn training data. 
 ![alt text][image2] 
-![alt text][image3] 
 
 ### Model Architecture and Training
 The model is based on [Nvidia's paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) 
