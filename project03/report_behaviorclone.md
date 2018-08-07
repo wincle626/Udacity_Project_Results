@@ -20,7 +20,7 @@
 Download simulator from [udacity repository](https://github.com/udacity/self-driving-car-sim), run the simulator in 
 autonomous mode and execute following command:
 ```
-> python drive.py model.h5 run1
+> python drive.py model1.h5 run1
 ```
 
 ### Data Preprocessing & Argumentation
