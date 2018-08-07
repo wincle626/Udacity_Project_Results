@@ -39,3 +39,6 @@ with following modification:
 * remove first fully connected layer with 1164 neurons
 * add a dropout layer to avoid overfitting
 * use elu instead of relu as activate function of covolution layer
+
+The training uses mean squared error as cost function and Adam optimizer with 0.001 learning rate,
+10% data as validation data, 50 epochs and batch size of 32.
