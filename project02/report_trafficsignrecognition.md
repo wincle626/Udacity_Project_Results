@@ -182,7 +182,7 @@ New:
 ![alt text][image7] 
 
 
-# By revisit the project and three major modification is done:
+# By revisiting the project and three major modification are done:
 
 ## 1. Improve the data pre-processing: a. correct the program typos in the image flipping function; b. add more data augment methods; c. balance the data set of different classes.
 
