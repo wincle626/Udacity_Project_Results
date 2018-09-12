@@ -22,9 +22,9 @@ The goals / steps of this project are the following:
 [image5]: ./results/load_data_softmax.png "Five Traffic Signs Classifier"
 [image6]: ./results/load_data_featuremap1.png "Featuremap1"
 [image7]: ./results/load_data_featuremap2.png "Featuremap2"
-[image8]: ./newresults/uniforminputdata.png "uniforminput"
-[image9]: ./newresults/accuracyimprove.png "accuracyimprove"
-[image10]: ./newresults/newsoftmax.png "newsoftmax"
+[image8]: ./newresult/uniforminputdata.png "uniforminput"
+[image9]: ./newresult/accuracyimprove.png "accuracyimprove"
+[image10]: ./newresult/newsoftmax.png "newsoftmax"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
