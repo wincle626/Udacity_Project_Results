@@ -22,6 +22,9 @@ The goals / steps of this project are the following:
 [image5]: ./results/load_data_softmax.png "Five Traffic Signs Classifier"
 [image6]: ./results/load_data_featuremap1.png "Featuremap1"
 [image7]: ./results/load_data_featuremap2.png "Featuremap2"
+[image8]: ./newresults/uniforminputdata.png "uniforminput"
+[image9]: ./newresults/accuracyimprove.png "accuracyimprove"
+[image10]: ./newresults/newsoftmax.png "newsoftmax"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -50,7 +53,11 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data distributed among all the 43 classes. 
 
+Old:
 ![alt text][image1]
+
+New:
+![alt text][image8]
 
 
 From the bar chart, it worth notice that there is an bias of classes across 43 different labels. Not sure how much it will affect on the training process, which needs further exploration. 
@@ -73,6 +80,27 @@ The difference between the original data set and the all pre-processed data set 
 
 I am still using the lenet to do this project, the architecture is as following:
 
+Old architecture
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 32x32x1 RGB image   							| 
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 28x28x6 	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
+| Convolution 5x5	    | 1x1 stride, valid padding, outputs 10x10x16      									|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
+| Fully connected		| input 400, output = 120        									|
+| RELU					|												|
+| Fully connected		| input 120, output = 84        									|
+| RELU					|												|
+| Fully connected		| input 84, output = 43        									|
+| Softmax				| input 43, output = 43        									|
+|						|												|
+|						|												|
+ 
+
+New architecture
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
@@ -90,8 +118,6 @@ I am still using the lenet to do this project, the architecture is as following:
 | Softmax				| input 43, output = 43        									|
 |						|												|
 |						|												|
- 
-
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
@@ -101,12 +127,18 @@ To train the model, I used learning rate of 0.001, upto 200 epochs and bach size
 
 The final model results are show as following:
 
+Old:
 ![alt text][image3]
 
 * training set accuracy is over 95%
 * validation set accuracy of 85.0% 
 * test set accuracy of 84.5%
  
+ New:
+![alt text][image9]
+
+* validation set accuracy of 98% 
+* test set accuracy of 96%
 
 ### Test a Model on New Images
 
@@ -137,7 +169,11 @@ The code for making predictions on my final model is located in the 17th cell of
 
 The top five soft max probabilities of each image are as following:
 
+Old:
 ![alt text][image5] 
+
+New:
+![alt text][image10] 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
@@ -145,3 +181,11 @@ The top five soft max probabilities of each image are as following:
 ![alt text][image6] 
 ![alt text][image7] 
 
+
+# By revisit the project and three major modification is done:
+
+## 1. Improve the data pre-processing: a. correct the program typos in the image flipping function; b. add more data augment methods; c. balance the data set of different classes.
+
+## 2. Change the LeNet input from single color image to RGB image. This migh be the major reason of low accuracy in previous version. 
+
+## 3. Reduce the number of both the learning rate and the epoch. 
