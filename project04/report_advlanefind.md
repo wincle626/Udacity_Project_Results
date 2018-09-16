@@ -211,9 +211,9 @@ Firstly, I tried to fine tune the threshold according to those frames that hard 
 
 ### Update
 
-#### 1. The radius of curvature and the position measurement are adjusted according to the size of the warping, which are 
-    ym_per_pix = 15/720 # meters per pixel in y dimension
-    xm_per_pix = 3.7/490 # meters per pixel in x dimension
+#### 1. The radius of curvature and the position measurement are adjusted according to the size of the warping src and dst scaling, which are now 
+    ym_per_pix = 20/720 # meters per pixel in y dimension
+    xm_per_pix = 3.7/720 # meters per pixel in x dimension
     
 #### 2. More color spaces are explored to improve the lane finding which is better in the project video but still need more work on the challenge and hard challenge video.
 
