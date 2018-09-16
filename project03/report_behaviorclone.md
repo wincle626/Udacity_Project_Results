@@ -18,7 +18,7 @@
 | drive.py | communicate with simulator and use saved model to predict steering angle  |
 | video.mp4 | track 1 video record |
 
-Updated files:
+### Updated files:
 |  Filename   |   Description  | 
 |:-------------:|:-------------:|
 | dataprep_improve.py |  improved data preprocessing and argumentation |
