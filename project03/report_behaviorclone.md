@@ -42,7 +42,7 @@ I used the trained data from the simulator. Using the simulator, the car is driv
 The data is preprocessed with noise and flipping due to the most left turn training data. 
 ![alt text][image2] 
 
-#### Improvement
+- ![#f03c15] #### Improvement Update`#f03c15`
 
 After several days experiments, the hardest part is to prepare the data. Several modification compared to previous approach are made as follow:
 
