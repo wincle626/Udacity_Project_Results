@@ -40,6 +40,7 @@ The goals / steps of this project are the following:
 [video1]: ./output_videos/project_video_out.mp4 "Video"
 [video2]: ./output_videos/challenge_video_out.mp4 "Video"
 [video3]: ./output_videos/harder_challenge_video_out.mp4 "Video"
+[video4]: ./output_videos/project_video_out_mod.mp4 "Video"
 
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -206,3 +207,14 @@ The pipeline works OK for the project video as the enviroment is relative simple
     3. The ROI zone is not consistent. In some video frames, the ROI does not cover the real intereting area.
     
 Firstly, I tried to fine tune the threshold according to those frames that hard to identify the lane. Second, I tried to tuning the ROI and warp source & destination. These two steps works for the project video. However, it still does not work for the challenge and harder challenge video. I even try to do Histgram equalization of the image first but it needs more tuing of the threshold of bianry images. The ways I think might improve this, would be filtering the lane identification across several frames and doing a adaptive parameterized thresholding. As the road turn, it might worth to try to use higher order fitting parameters. 
+
+
+### Update
+
+#### 1. The radius of curvature and the position measurement are adjusted according to the size of the warping, which are 
+    ym_per_pix = 15/720 # meters per pixel in y dimension
+    xm_per_pix = 3.7/490 # meters per pixel in x dimension
+    
+#### 2. More color spaces are explored to improve the lane finding which is better in the project video but still need more work on the challenge and hard challenge video.
+
+Here's a [link to the updated project video result](./output_videos/project_video_out_mode.mp4 "project")
