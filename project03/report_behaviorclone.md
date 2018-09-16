@@ -7,6 +7,7 @@
 [image3]: ./show_data_improve.png "dataprepimprove"
 [image4]: ./datahist_improve.png "imageprocimprove"
 [image5]: ./errloss_improve.png "errorloss"
+[image6]: ./run_improve.gif "result"
 
 ### Project Files
 
@@ -88,6 +89,10 @@ The model is slightly adjust according to the Nvidia paper. The modifications ar
     4. The learning rate for Adam optimizer is set to much smaller then before, 0.00001, which allows better optimization space using small steps. The batch size is increased to 128 to accelerate the epochs. The validation data set uses 20% instead of 10%. An error loss figure is added to show the iterating process shown as follow:
     
 ![alt text][image5] 
+
+The final run is shown as follow:
+
+![alt text][image6] 
 
 
 ### Thoughts
