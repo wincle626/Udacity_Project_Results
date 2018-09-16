@@ -42,7 +42,7 @@ I used the trained data from the simulator. Using the simulator, the car is driv
 The data is preprocessed with noise and flipping due to the most left turn training data. 
 ![alt text][image2] 
 
-#### Improvement Update
+### Modified Data Preprocessing & Argumentation
 
 After several days experiments, the hardest part is to prepare the data. Several modification compared to previous approach are made as follow:
 
@@ -73,7 +73,7 @@ with following modification:
 The training uses mean squared error as cost function and Adam optimizer with 0.001 learning rate,
 10% data as validation data, 50 epochs and batch size of 32.
 
-#### Improvement Update
+### modified Model Architecture and Training
 
 Overall, the architecture uses 5 feature extraction layers using 2D convolution. The first three feature extraction layers use 5x5 kernel and stride (2,2) while the last two feature extraction layers use 3x3 kernel and unit stride. Then the 3D data is flatten into 1x1164 array and input to another 5 layers fully connect classifier. 
 
@@ -88,3 +88,14 @@ The model is slightly adjust according to the Nvidia paper. The modifications ar
     4. The learning rate for Adam optimizer is set to much smaller then before, 0.00001, which allows better optimization space using small steps. The batch size is increased to 128 to accelerate the epochs. The validation data set uses 20% instead of 10%. An error loss figure is added to show the iterating process shown as follow:
     
 ![alt text][image5] 
+
+
+### Thoughts
+
+    1. The car behavior cloning is very sensitive to the input data. Using camera to navigate the car is totally not enough. 
+    
+    2. Following the Nvidia paper, it is not very clear why this architecture works fine. Further reading is needed for the tracerbility of the model. 
+    
+    3. The hardware requirement is becoming a bottleneck to training more complex model. I am using GTX 980M 8GB but there is a memory warning when trying more complex network architecture. 
+    
+    4. C++ might be a better choice as Python does run-time parsing.
